@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -58,7 +59,7 @@ for (int i = 0; i < linhas; i++){
         }
     }
 }
-
+for (int i = 0; i < switch; i++){
 switch (diercao){
     case 'a':
     mapa[x] [y-1] = '@';
@@ -78,7 +79,7 @@ switch (diercao){
   }
 
 }
-
+}
 int main(){
 
 lermapa();     
