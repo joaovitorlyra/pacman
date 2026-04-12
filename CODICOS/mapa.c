@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "mapa.h"
+
 void liberamapa(MAPA* m){
     for (int i = 0; i < m->linhas; i++){
         free (m->matriz [i]);
@@ -21,7 +25,7 @@ void lermapa(MAPA* m){
     }
     fscanf(f, "%d %d", &(m->linhas), &(m->colunas));
        
-alocamapa(MAPA* m);
+alocamapa(m);
 
     for (int i = 0; i < 5;i++){
         fscanf(f, "%s", m->matriz[i]);
